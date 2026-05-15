@@ -1,0 +1,45 @@
+# ── Audio / Video Acquisition ────────────────────────────────────────────────
+yt-dlp>=2024.4.9               # Download audio from YouTube URLs
+pydub>=0.25.1                  # Audio processing & format conversion
+ffmpeg-python>=0.2.0           # FFmpeg Python bindings (ffmpeg binary also required)
+
+# ── Transcription ─────────────────────────────────────────────────────────────
+openai-whisper>=20231117       # Local Whisper ASR model
+torch>=2.2.0                   # PyTorch backend for Whisper
+torchaudio>=2.2.0              # Audio tensor utilities
+
+# ── Translation (Hindi → English) ────────────────────────────────────────────
+deep-translator>=1.11.4        # Lightweight translation wrapper (Google, DeepL, etc.)
+imageio-ffmpeg
+# ── LLM / LangChain LCEL + Mistral ───────────────────────────────────────────
+langchain>=0.2.0               # Core LangChain framework & LCEL
+langchain-community>=0.2.0    # Community integrations (document loaders, etc.)
+langchain-mistralai>=0.1.6    # LangChain × Mistral integration
+mistralai>=0.4.2               # Mistral official Python client
+
+# ── RAG Pipeline ─────────────────────────────────────────────────────────────
+chromadb>=0.5.0                # Vector store for transcript embeddings
+langchain-chroma>=0.1.1        # LangChain ↔ ChromaDB bridge
+sentence-transformers>=2.7.0   # Hugging Face embedding models (e.g. all-MiniLM-L6-v2)
+huggingface-hub>=0.23.0        # Model downloading from HF Hub
+tokenizers>=0.19.0             # Fast tokenizers for HF models
+transformers>=4.41.0           # HF transformers (required by sentence-transformers)
+
+# ── Streamlit UI ─────────────────────────────────────────────────────────────
+streamlit>=1.35.0              # Web UI framework
+watchdog>=4.0.0                # Faster Streamlit hot-reload (optional but recommended)
+
+# ── Export: PDF & TXT ────────────────────────────────────────────────────────
+fpdf2>=2.7.9                   # Pure-Python PDF generation
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.1           # Load API keys from .env file
+numpy>=1.26.0                  # Numerical ops (Whisper / torch dependency)
+tqdm>=4.66.0                   # Progress bars
+requests>=2.32.0               # HTTP client (yt-dlp, API calls)
+
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+aiofiles>=23.2.1

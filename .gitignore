@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+.env.*
+
+# Downloads & Generated Audio
+downloads/
+*.wav
+*.mp3
+*.mp4
+*.webm
+*.m4a
+
+# Vector Database
+vector_db/
+chroma_db/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Hugging Face / Model Cache
+.cache/
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build / Distribution
+build/
+dist/
+*.egg-info/
+
+# Runtime Temp Files
+tmp/
+temp/
+
+# Git
+.git/
